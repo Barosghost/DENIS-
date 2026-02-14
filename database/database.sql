@@ -74,7 +74,4 @@ CREATE TABLE IF NOT EXISTS action_logs (
     FOREIGN KEY (id_user) REFERENCES users(id_user)
 );
 
--- Default Admin User (username: admin, password: password)
--- NOTE: In production, use hashed passwords! This is for initial setup.
--- We will implement proper hashing in the PHP login script.
-INSERT IGNORE INTO users (username, password, role) VALUES ('admin', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin');
+;
